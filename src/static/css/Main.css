@@ -1,0 +1,24 @@
+.background {
+    background-color: #189AB4;
+}
+.cards {
+    background-color: #D4F1F4;
+}
+
+#box {
+    width: 33.3333%;
+    margin-top: 15%;
+}
+
+#mac {
+    width: 65%;
+}
+
+#game {
+    width: 200px;
+    height: auto;
+}
+#development {
+    width: 200px;
+    height: auto;
+}
