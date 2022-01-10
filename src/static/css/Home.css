@@ -15,6 +15,14 @@
     margin-left: 9%;
 }
 
+.profileCard {
+    width: 18rem;
+    background-color: #189AB4; 
+    border: 0px; 
+    box-shadow: 0 2.5rem 3.125rem rgb(103 118 128 / 10%); 
+    margin: auto;
+}
+
 .icons {
     width: 24px;
     height: 24px;
@@ -24,6 +32,24 @@
     width: 16px;
     height: 16px;
     color: #189AB4;
+}
+
+.data-list-group {
+    background-color: #D4F1F4;
+    border: 2px; 
+    border-bottom: hidden;
+}
+
+#role {
+    margin-top: 2%;
+    text-align: center;
+    color: #189AB4;
+    background-color: #75E6DA;
+    border: 1px solid #75E6DA;
+    border-top-left-radius: calc(3.25rem - 15px);
+    border-top-right-radius: calc(3.25rem - 15px); 
+    border-bottom-left-radius: calc(3.25rem - 15px);
+    border-bottom-right-radius: calc(3.25rem - 15px);
 }
 
 .groupItems {
@@ -78,6 +104,22 @@
 .cardimgs {
     width: 64px;
     margin: auto;
+}
+
+#top-card {
+    margin: auto;
+    background-color: #189AB4;
+    border-top: hidden;
+    border: hidden;
+    border-bottom-left-radius: calc(3.25rem - 15px);
+    border-bottom-right-radius: calc(3.25rem - 15px);
+}
+
+#bottom-card {
+    background-color: white; 
+    border: hidden;
+    border-bottom-left-radius: calc(3.25rem - 15px); 
+    border-bottom-right-radius: calc(3.25rem - 15px);
 }
 
 

@@ -53,12 +53,12 @@ export default function Home() {
                         <Row>
                             <Col>
                                 <div className="background profilePositon">
-                                <Card style={{ width: '18rem', backgroundColor: "#189AB4", border: "0px", boxShadow: "0 2.5rem 3.125rem rgb(103 118 128 / 10%)", margin: "auto"}}>
+                                <Card className="profileCard">
                                     <img src={profilepic} alt="Profile Picture" id="cardImage" style={{ backgroundColor: "#84BBDB", marginTop: "15px" }} />
                                     <Card.Body style={{ backgroundColor: "white", border: "1px solid rgba(0,0,0,.125)", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)"}}>
                                         <Card.Title><h2 style={{ textAlign: "center", color: "#05445E" }}>Mario<strong> Gomez</strong></h2></Card.Title>
                                         <Card.Text>
-                                        <h5 style={{ marginTop: "2%", textAlign: "center", color: "#189AB4", backgroundColor: "#75E6DA", border: "1px solid #75E6DA", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)", borderBottomLeftRadius: "calc(3.25rem - 15px)", borderBottomRightRadius: "calc(3.25rem - 15px)" }}>Web Developer</h5>
+                                        <h5 id="role">Web Developer</h5>
                                         </Card.Text>
                                         <table className="table" style={{ textAlign: "center" }}>
                                             <thead>
@@ -71,7 +71,7 @@ export default function Home() {
                                             </thead>
                                         </table>
                                     </Card.Body>
-                                    <ListGroup className="list-group-flush" style={{ backgroundColor: "#D4F1F4", border: "2px", borderBottom: "hidden"}}>
+                                    <ListGroup className="list-group-flush data-list-group">
                                         <ListGroupItem className="groupItems">
                                             <img className="data" src={calendar} alt="Birth Date" />
                                             <h6 className="groupInfo">October 18th, 1991</h6>
@@ -97,8 +97,8 @@ export default function Home() {
                                 </Card>
                                 </div>
                             </Col>
-                            <Col className="information" style={{ backgroundColor: "#189AB4" }} xs={6}>
-                                <Card className="phoneCard" style={{ margin: "auto", backgroundColor: "#189AB4", borderTop: "hidden", border: "hidden", borderBottomLeftRadius: "calc(3.25rem - 15px)", borderBottomRightRadius: "calc(3.25rem - 15px)" }}>
+                            <Col className="information" style={{ backgroundColor: "#189AB4", marginBottom: "2%" }} xs={6}>
+                                <Card className="phoneCard" id="top-card">
                                     <Card.Header style={{ border: "hidden", color: "#05445E", backgroundColor: "white", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)" }} as="h3">About Me <br/>
                                         <img src={line} alt="Separation" style={{ transform: "rotate(90deg)", width: "32px" }}/>
                                         <h6>
@@ -164,7 +164,7 @@ export default function Home() {
                                             </Row>
                                         </Card.Text>
                                     </Card.Body>
-                                    <Card.Body style={{ backgroundColor: "white", border: "hidden", borderBottomLeftRadius: "calc(3.25rem - 15px)", borderBottomRightRadius: "calc(3.25rem - 15px)"}}>
+                                    <Card.Body id="bottom-card">
                                         <Card.Title style={{ border: "hidden", color: "#05445E" }} as="h3">Pricing</Card.Title>
                                         <Card.Text style={{ color: "#05445E" }}>
                                             <Row xs={1} md={2} className="g-4">
@@ -180,8 +180,8 @@ export default function Home() {
                                                         Responsive designs <br />
                                                         WhatsApp Chat <br />
                                                         Social Media links <br />
-                                                        <s>Hosting and Domain</s> <br />
-                                                        <s>Content administration </s> <br />
+                                                        <s style={{ color: "#75E6DA" }}>Hosting and Domain</s> <br />
+                                                        <s style={{ color: "#75E6DA" }}>Content administration </s> <br />
                                                     </Card.Text>
                                                     <Button variant="info">Learn more</Button>
                                                     </Card.Body>
