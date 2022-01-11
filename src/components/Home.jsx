@@ -39,6 +39,7 @@ import webdesign from '../static/img/webdesign.svg'
 import database from '../static/img/database.svg'
 import training from '../static/img/training.svg'
 import pricing from '../static/img/pricing.svg'
+import tree from '../static/img/tree.png'
 
 
 
@@ -48,13 +49,13 @@ export default function Home() {
         <>
             <Header />
             <section>
-                <div className="background">
+                <div className="background img-tree">
                     <Container>
                         <Row>
                             <Col>
-                                <div className="background profilePositon">
+                                <div className="profilePositon">
                                 <Card className="profileCard">
-                                    <img src={profilepic} alt="Profile Picture" id="cardImage" style={{ backgroundColor: "#84BBDB", marginTop: "15px" }} />
+                                    <img src={profilepic} alt="Profile Picture" id="cardImage" style={{ backgroundColor: "transparent", marginTop: "15px" }} />
                                     <Card.Body style={{ backgroundColor: "white", border: "1px solid rgba(0,0,0,.125)", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)"}}>
                                         <Card.Title><h2 style={{ textAlign: "center", color: "#05445E" }}>Mario<strong> Gomez</strong></h2></Card.Title>
                                         <Card.Text>
@@ -97,7 +98,7 @@ export default function Home() {
                                 </Card>
                                 </div>
                             </Col>
-                            <Col className="information" style={{ backgroundColor: "#189AB4", marginBottom: "2%" }} xs={6}>
+                            <Col className="information" style={{ backgroundColor: "transparent", marginBottom: "2%" }} xs={6}>
                                 <Card className="phoneCard" id="top-card">
                                     <Card.Header style={{ border: "hidden", color: "#05445E", backgroundColor: "white", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)" }} as="h3">About Me <br/>
                                         <img src={line} alt="Separation" style={{ transform: "rotate(90deg)", width: "32px" }}/>
@@ -158,6 +159,65 @@ export default function Home() {
                                                     <Card.Text>
                                                         Professional training for your employees in all ranges of tools.
                                                     </Card.Text>
+                                                    </Card.Body>
+                                                </Card>
+                                                </Col>
+                                            </Row>
+                                        </Card.Text>
+                                    </Card.Body>
+                                    <Card.Body style={{ backgroundColor: "#D4F1F4", border: "hidden" }}>
+                                        <Card.Text style={{ color: "#05445E" }}>
+                                            <Row xs={1} md={2} className="g-4">
+                                                <Col>
+                                                <Card.Title style={{ border: "hidden", color: "#05445E" }} as="h3">Coding Skills</Card.Title>
+                                                <Card className="groupcards">
+                                                    <Card.Body>
+                                                        <p>Python</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills python">90%</div>
+                                                        </div>
+                                                        <br />
+                                                        <p>JavaScript</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills js">80%</div>
+                                                        </div>
+                                                        <br />
+                                                        <p>HTML</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills html">100%</div>
+                                                        </div>
+                                                        <br />
+                                                        <p>CSS</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills css">70%</div>
+                                                        </div>
+                                                        <br />  
+                                                    </Card.Body>
+                                                </Card>
+                                                </Col>
+                                                <Col>
+                                                <Card.Title style={{ border: "hidden", color: "#05445E" }} as="h3">Soft Skills</Card.Title>
+                                                <Card className="groupcards">
+                                                    <Card.Body>
+                                                        <p>Adaptability</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills adapt">100%</div>
+                                                        </div>
+                                                        <br />
+                                                        <p>Innovation</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills innovate">80%</div>
+                                                        </div>
+                                                        <br />
+                                                        <p>Dedication</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills dedication">90%</div>
+                                                        </div>
+                                                        <br />
+                                                        <p>Organization</p>
+                                                        <div class="skill-container">
+                                                            <div class="skills org">85%</div>
+                                                        </div>
                                                     </Card.Body>
                                                 </Card>
                                                 </Col>

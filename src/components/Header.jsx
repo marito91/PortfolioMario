@@ -16,7 +16,6 @@ export default function Header() {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="/about">About Me</Nav.Link>
-                    <Nav.Link href="/resume">Resume</Nav.Link>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
                     <NavDropdown.Item href="https://tinyurl.com/2v7z9j52">Konoha Center</NavDropdown.Item>
                     <NavDropdown.Divider />

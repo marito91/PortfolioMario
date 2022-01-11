@@ -17,7 +17,8 @@
 
 .profileCard {
     width: 18rem;
-    background-color: #189AB4; 
+    /*background-color: #189AB4; */
+    background-color: transparent; 
     border: 0px; 
     box-shadow: 0 2.5rem 3.125rem rgb(103 118 128 / 10%); 
     margin: auto;
@@ -108,7 +109,8 @@
 
 #top-card {
     margin: auto;
-    background-color: #189AB4;
+    /*background-color: #189AB4;*/
+    background-color: transparent;
     border-top: hidden;
     border: hidden;
     border-bottom-left-radius: calc(3.25rem - 15px);
@@ -136,6 +138,7 @@
     position: fixed;
 }
 
+/* PHONES */
 @media only screen and (max-width: 768px) {
     /* Phones */
     .information {
@@ -153,6 +156,14 @@
 
     .phoneCard {
         width: 90%;
+        background-color: transparent;
+    }
+
+    .groupItems {
+        color: #05445E;
+        text-align: left;
+        display: none;
+        padding: 10px;
     }
 }
 /*
@@ -208,3 +219,43 @@
       width: 100%;
     }
   }
+
+
+
+
+    /* Make sure that padding behaves as expected */
+    *{box-sizing:border-box}
+
+    /* Container for skill bars */
+    .skill-container {
+    width: 100%; /* Full width */
+    background-color: #D4F1F4; /* Grey background */
+    border-top-left-radius: calc(3.25rem - 15px);
+    border-top-right-radius: calc(3.25rem - 15px);
+    border-bottom-left-radius: calc(3.25rem - 15px);
+    border-bottom-right-radius: calc(3.25rem - 15px);
+    }
+
+    .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 5px; /* Add top padding */
+    padding-bottom: 5px; /* Add bottom padding */
+    color: white; /* White text color */
+    border-top-left-radius: calc(3.25rem - 15px);
+    border-top-right-radius: calc(3.25rem - 15px);
+    border-bottom-left-radius: calc(3.25rem - 15px);
+    border-bottom-right-radius: calc(3.25rem - 15px);
+    }
+
+    .html {width: 100%; background-color: #189AB4;} 
+    .css {width: 70%; background-color: #189AB4;} 
+    .js {width: 80%; background-color: #189AB4;} 
+    .python {width: 90%; background-color: #189AB4;} 
+
+    .adapt {width: 100%; background-color: #189AB4;} 
+    .innovate {width: 80%; background-color: #189AB4;} 
+    .dedication {width: 90%; background-color: #189AB4;} 
+    .org {width: 85%; background-color: #189AB4;} 
+
+
+

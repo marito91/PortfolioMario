@@ -95,9 +95,9 @@ export default function Home() {
                                 </Card>
                                 </div>
                             </Col>
-                            <Col className="information" style={{ backgroundColor: "#189AB4", marginBottom: "2%" }} xs={6}>
+                            <Col className="resume-info" style={{ backgroundColor: "#189AB4", marginBottom: "2%" }} xs={6}>
                                 <Card className="phoneCard" id="top-card">
-                                    <Card.Header style={{ border: "hidden", color: "#05445E", backgroundColor: "white", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)" }} as="h2">Resume<br/>
+                                    <Card.Header style={{ border: "hidden", color: "#05445E", backgroundColor: "white", borderTopLeftRadius: "calc(3.25rem - 15px)", borderTopRightRadius: "calc(3.25rem - 15px)" }} as="h3">Resume<br/>
                                         <img src={line} alt="Separation" style={{ transform: "rotate(90deg)", width: "32px" }}/>          
                                     </Card.Header>
                                     <Card.Body  style={{ backgroundColor: "white", border: "hidden" }}>

@@ -22,6 +22,11 @@ Baby Blue
     background-color: #D4F1F4;
 }
 
+.tree {
+    background-image: url('../img/tree.png');
+}
+
+
 #box {
     width: 33.3333%;
     margin-top: 15%;
@@ -39,3 +44,12 @@ Baby Blue
     width: 200px;
     height: auto;
 }
+
+.img-tree {
+    background-image: url('../img/tree.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
