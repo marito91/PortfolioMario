@@ -47,9 +47,8 @@ Baby Blue
 
 .img-tree {
     background-image: url('../img/tree.png');
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 700px auto;
     position: relative;
   }
   

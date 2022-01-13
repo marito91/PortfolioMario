@@ -15,7 +15,8 @@ export default function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="/about">About Me</Nav.Link>
+                    <Nav.Link href="https://github.com/marito91">GitHub</Nav.Link>
+                    <Nav.Link href="https://www.linkedin.com/in/mario-gomez-a5b131187/">LinkedIn</Nav.Link>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
                     <NavDropdown.Item href="https://tinyurl.com/2v7z9j52">Konoha Center</NavDropdown.Item>
                     <NavDropdown.Divider />

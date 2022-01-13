@@ -8,6 +8,7 @@ import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
 // Components
 import Header from './Header'
@@ -18,13 +19,7 @@ import '../static/css/Main.css';
 
 // Images
 import profilepic from '../static/img/profilePic.JPG'
-/*
-import Figure from 'react-bootstrap/Figure'
-import macbook from '../static/img/macbookpro.svg'
-import boxing from '../static/img/boxing.svg'
-import gaming from '../static/img/gaming.svg'
-import programming from '../static/img/programming.svg'
-*/
+
 import instagram from '../static/img/instagram.svg'
 import linkedin from '../static/img/linkedin.svg'
 import github from '../static/img/github.svg'
@@ -39,11 +34,28 @@ import webdesign from '../static/img/webdesign.svg'
 import database from '../static/img/database.svg'
 import training from '../static/img/training.svg'
 import pricing from '../static/img/pricing.svg'
-import tree from '../static/img/tree.png'
 
 
 
 export default function Home() {
+
+    /* Codigo para determinar clases CSS según el scrolling
+    
+        $(function () {
+            var header = $(".classinitial");
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+  
+                if (scroll >= 155) {
+                    header.removeClass('classinitial')
+                            .addClass("classfinal");
+                } else {
+                    header.removeClass("classfinal")
+                            .addClass('classinitial');
+                }
+            });
+        });
+    */
 
     return (
         <>
@@ -92,7 +104,10 @@ export default function Home() {
                                     </ListGroup>
                                     <Card.Body style={{ backgroundColor: "#D4F1F4", textAlign: "center", borderTop: "hidden", borderBottomLeftRadius: "calc(3.25rem - 15px)", borderBottomRightRadius: "calc(3.25rem - 15px)" }}>
                                         <form method="GET" action='../static/docs/Resumes.zip'>
-                                            <Button variant="info">Download CV</Button>{' '}
+                                            {/*<Button variant="info">Download CV</Button>{' '}*/}
+                                            <Link to="/resume/Resumes.zip" target="_blank" download>
+                                                <Button variant="info">Download CV</Button>
+                                            </Link>
                                         </form>
                                     </Card.Body>
                                 </Card>
@@ -142,7 +157,7 @@ export default function Home() {
                                             <Row xs={1} md={2} className="g-4" style={{ marginTop: "2%" }}>
                                                 <Col>
                                                 <Card className="groupcards">
-                                                    <Card.Img variant="top" src={database} className="cardimgs"/>
+                                                    <Card.Img variant="top" src={database} style={{ marginTop: "2%" }} className="cardimgs"/>
                                                     <Card.Body>
                                                     <Card.Title>Database</Card.Title>
                                                     <Card.Text>
@@ -153,7 +168,7 @@ export default function Home() {
                                                 </Col>
                                                 <Col>
                                                 <Card className="groupcards">
-                                                    <Card.Img variant="top" src={training} className="cardimgs" />
+                                                    <Card.Img variant="top" src={training} style={{ marginTop: "2%" }} className="cardimgs" />
                                                     <Card.Body>
                                                     <Card.Title>Training</Card.Title>
                                                     <Card.Text>
@@ -243,7 +258,9 @@ export default function Home() {
                                                         <s style={{ color: "#75E6DA" }}>Hosting and Domain</s> <br />
                                                         <s style={{ color: "#75E6DA" }}>Content administration </s> <br />
                                                     </Card.Text>
-                                                    <Button variant="info">Learn more</Button>
+                                                    <a href="https://api.whatsapp.com/send?phone=573017823403">
+                                                        <Button variant="info">Learn more</Button>
+                                                    </a>
                                                     </Card.Body>
                                                 </Card>
                                                 </Col>
@@ -262,7 +279,9 @@ export default function Home() {
                                                         Hosting and Domain <br />
                                                         Content administration <br />
                                                     </Card.Text>
-                                                    <Button variant="info">Learn more</Button>
+                                                    <a href="https://api.whatsapp.com/send?phone=573017823403">
+                                                        <Button variant="info">Learn more</Button>
+                                                    </a>
                                                     </Card.Body>
                                                 </Card>
                                                 </Col>
