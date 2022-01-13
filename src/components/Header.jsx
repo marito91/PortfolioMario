@@ -22,7 +22,7 @@ export default function Header() {
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.2">Plataforma Transporte Fluvial</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.3">Universidad del Tolima</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Sistema de Gestión de Notas</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 </Navbar.Collapse>
