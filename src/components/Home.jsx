@@ -104,7 +104,6 @@ export default function Home() {
                                     </ListGroup>
                                     <Card.Body style={{ backgroundColor: "#D4F1F4", textAlign: "center", borderTop: "hidden", borderBottomLeftRadius: "calc(3.25rem - 15px)", borderBottomRightRadius: "calc(3.25rem - 15px)" }}>
                                         <form method="GET" action='../static/docs/Resumes.zip'>
-                                            {/*<Button variant="info">Download CV</Button>{' '}*/}
                                             <Link to="/resume/Resumes.zip" target="_blank" download>
                                                 <Button variant="info">Download CV</Button>
                                             </Link>
